@@ -3,65 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Product preview card component</title>
     <link href="./style.css" rel="stylesheet" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="Gabrielle Essence Eau De Parfum
+      <img class="image-mobile"
+        src="./images/image-product-mobile.jpg"
+        alt="Gabrielle Essence Eau De Parfum
         "
-          width="200rem"
-          height="200rem"
-        />
+        width="200rem"
+        height="200rem"
+      />
+       <img class="image-desktop"
+        src="./images/image-product-desktop.jpg"
+        alt="Gabrielle Essence Eau De Parfum
+        "
+        width="200rem"
+        height="200rem"
+      />
+      <div class="text-box">
         <h2>Perfume</h2>
         <h1>Gabrielle Essence Eau De Parfum</h1>
-      </header>
-      <p>
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of <span>CHANEL</span>.
-      </p>
-      <main class="price">
-        <h3>$149.99</h3>
-        <p>$169.99</p>
-      </main>
-      <button type="button">
-        <div class="btn">
-          <svg width="20px" heigh="20px">
+
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <div class="price">
+          <h3>$149.99</h3>
+          <p>$169.99</p>
+        </div>
+        <button type="button">
+          <svg width="20px" height="20px">
             <use href="/images/icon-cart.svg"></use>
           </svg>
           Add to Cart
-        </div>
-      </button>
+        </button>
+      </div>
     </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>
